@@ -18,33 +18,17 @@
     <meta property="og:title" content="Covid Daily Check-in" />
     <meta property="og:site_name" content="Covid Daily Check-in" />
 
-    <title>Covid Daily Check-in - Government of Nova Scotia</title>
+    <title>Check-In Confirmation - Covid Daily Check-in - Government of Nova Scotia</title>
 
     <link rel="icon" type="image/x-icon" href="https://novascotia.ca/clf/ignition/favicon.ico" />
     <link rel="apple-touch-icon-precomposed" href="https://novascotia.ca/clf/ignition/shortcut.png" />
 
-    <link rel="stylesheet" media="all" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" media="all" href="assets/lib/bootstrap/dist/css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" media="all" href="assets/lib/bootstrap-datepicker/css/bootstrap-datepicker.min.css" />
-    <link rel="stylesheet" media="all" href="assets/lib/jqueryui/jquery-ui.min.css" />
-    <link rel="stylesheet" media="all" href="assets/lib/font-awesome/css/all.min.css" />
-    <link rel="stylesheet" media="all" href="assets/lib/bootstrap-datepicker/css/bootstrap-datepicker.min.css" />
-    <link rel="stylesheet" media="all" href="assets/css/saltire.min.css" />
-    <link rel="stylesheet" media="all" href="assets/css/site.min.css" />
-    <link rel="stylesheet" media="all" href="assets/css/supplimentary-page-styles.css"><!-- Include in all head tags -->
-	<link rel="stylesheet" media="all" href="assets/css/global-form-styles.css"><!-- Include only if forms are used-->
-	<link rel="stylesheet" media="all" href="assets/css/radio-button.css"><!-- Include only if radios are used-->
-	<link rel="stylesheet" media="all" href="assets/css/toggle.css"><!-- Include only if toggles are present-->
-	<link rel="stylesheet" media="all" href="assets/css/checkboxes.css"><!-- Include only if checkboxes are used-->
-	<link rel="stylesheet" media="all" href="assets/css/slider.css"><!-- Include only if sliders are used-->
-	<link rel="stylesheet" media="all" href="assets/css/input-field-group.css"><!-- Include only if inputs are used-->
-	<link rel="stylesheet" media="all" href="assets/css/select.css"><!-- Include only if selects are used-->
-	<link rel="stylesheet" media="all" href="assets/css/buttons.css"><!-- Include only if buttons are used-->
-	<link rel="stylesheet" media="all" href="assets/css/phase-banner.css"><!-- Include only if phase banner is used-->
-	<link rel="stylesheet" media="all" href="assets/css/accordion.css"><!-- Include this only if needed -->
-	<link rel="stylesheet" media="all" href="assets/css/panel.css"><!-- Include this only if needed -->
-	<link rel="stylesheet" media="all" href="assets/css/date-picker.css"><!-- Include this only if needed -->
-
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="assets/lib/jqueryui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/lib/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/lib/bootstrap-datepicker/css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="assets/css/saltire.min.css" />
+    <link rel="stylesheet" href="assets/css/site.min.css" />
     
 </head>
 
@@ -86,35 +70,34 @@
             <!-- Heading -->
             <div class="row m-b-md m-t-md">
                 <div class="col-sm-12">
-                        <h1>Covid Daily Check-in</h1>
+                    <h1>Covid Daily Check-in</h1>
                 </div>
             </div>
             <!-- END Heading -->
                 
             <!-- Section -->
-            <section class="featured" id="contactInfo">
-                <form action="" method="post">    
-
-                    <div class="row">
-                        <div class="col-sm-10 col-md-8">
-                            <h2 class="m-b-md">Do you need to speak to a nurse?</h2>
-                        </div>
+            <section class="featured " id="index">
+                <div class="row m-t-md">
+                    <div class="col-sm-12">
+                        <h2>You have completed your self-isolation as of January 30, 2021 <span style="font-size: 1em; color: #408334;"><i class="fas fa-check-circle"></i></span></h2> 
+                        <p class="mb-3">You are no longer required to complete a daily check-in and no longer required to self-isolate.</p>
+                        <h3>What to do next</h3>
+                        <p class="mt-3"><strong>You may be contacted by Public Health</strong></p>
+                        <p>A Public Health representative may still contact you for questions about your case.</p>
+                        <p class="mt-3"><strong>Continue to monitor for symptoms of COVID-19</strong></p>
+                        <p>It is important to continue to monitor your health for symptoms of COVID-19. Complete a <a href="https://covid-self-assessment.novascotia.ca/en">COVID-19 Self-assessment</a> if you’re experiencing <a href="https://novascotia.ca/coronavirus/symptoms-and-testing/#symptoms">COVID-19 symptoms</a>. You can call 811 for assessment if you’re unable to complete the COVID-19 Self-assessment online (or to speak with a nurse).</p>
+                        <p class="mt-3"><strong>Stay diligent and safe</strong></p>
+                        <p>In addition to getting the vaccine, you need to follow <a href="https://novascotia.ca/coronavirus/restrictions-and-guidance/">public health directives</a>, including <a href="https://novascotia.ca/coronavirus/restrictions-and-guidance/#gatherings">gathering limits</a>, <a href="https://novascotia.ca/coronavirus/avoiding-infection/#social-distancing">social distancing guidelines</a>, <a href="https://novascotia.ca/coronavirus/avoiding-infection/#hands-clean">hand washing</a> guidelines and <a href="https://novascotia.ca/coronavirus/masks/">wearing a mask</a> when in public places. You should also stay home if you feel unwell and complete a <a href="https://covid-self-assessment.novascotia.ca/en">COVID-19 Self-assessment</a>.</p>
+                        <p></p>
                     </div>
-
-                    <div class="row mt-5">
-                        <div class="col-sm-10">
-                            <a id="YesButton" class="btn-xxl btn-default centered mr-4" href="checkin-confirmation.html?flagged=Yes">Yes</a>
-                            <a id="NoButton" class="btn-xxl btn-default centered ml-5" href="checkin-confirmation.html">No</a>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="mt-5"><a id="CheckinLink" class="underlineLink mr-4" href="checkin.html">Check someone else in</a></p>
+                        <p class="mt-1"><a id="CoronaButton" class="underlineLink mr-4" href="https://novascotia.ca/coronavirus/">More about COVID-19 in Nova Scotia</a></p>
+                        <p class="mt-1"><a id="HomeLink" class="underlineLink mr-4" href="index.html">Back to Daily Check-In welcome screen</a></p>
                     </div>
-
-                    <div class="row mt-5">
-                        <div class="col-sm-10">
-                            <a id="BackLink" href="#" class="underlineLink mr-4" onclick="history.back();"><i class="fa fa-angle-left"></i>Back</a>
-                        </div>
-                    </div>
-                    
-                </form>
+                </div>
             </section>
             <!-- END Section -->
 

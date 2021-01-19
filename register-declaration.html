@@ -18,7 +18,7 @@
     <meta property="og:title" content="COVID-19 Daily Check-In" />
     <meta property="og:site_name" content="COVID-19 Daily Check-In" />
 
-    <title>COVID-19 Daily Check-In - Government of Nova Scotia</title>
+    <title>Check-In Confirmation - COVID-19 Daily Check-In - Government of Nova Scotia</title>
 
     <link rel="icon" type="image/x-icon" href="https://novascotia.ca/clf/ignition/favicon.ico" />
     <link rel="apple-touch-icon-precomposed" href="https://novascotia.ca/clf/ignition/shortcut.png" />
@@ -79,39 +79,43 @@
             <section class="featured " id="index">
                 <div class="row m-t-md">
                     <div class="col-sm-12">
-                        <p class="mb-3">You’re legally required to self-isolate for 14 days or as directed by Public Health if you have tested positive for COVID-19 or have been told by Public Health that you may have been exposed and need to self-isolate.</p>
-                        <p>During your self-isolation, you must register for COVID-19 Daily Check-In and check-in every day until the end of your isolation period.</p>
-                        
-                        <h2>How to register</h2>
-                        <p class="mb-3">You will need the following to complete your registration:</p>
-                        <ul class="mb-3">
-                            <li class="unorderedList ml-4">Health Card Number</li>
-                            <li class="unorderedList ml-4">iolation end date (as directed by Public Health)</li>
-                            <li class="unorderedList ml-4">email address</li>
-                        </ul>
-
-                        <h2>What to do after you register</h2>
-                        <p class="mb-3">After you register:</p>
-                        <ul class="mb-3">
-                            <li class="unorderedList ml-4">you will receive email for registration confirmation and daily check-in reminders</li>
-                            <li class="unorderedList ml-4">you must check in every day until the end of your isolation </li>
-                            <li class="unorderedList ml-4">you must continue to self-isolate</li>
-                        </ul>
-
-                        <p>Learn more: <a href="https://novascotia.ca/coronavirus/symptoms-and-testing/#self-isolate">how to self-isolate</a>.</p>
-
-                        <div class="blockquote-alert" role="alert">
-                            <h2 class="mt-0 pb-2">Privacy Notice</h2>
-                            <p class="mb-3">When you use the COVID-19 Daily Check In service your personal information is collected under the authority sections 8, 15 and 50 of the Health Protection Act (PDF). We collect and use this personal information so that we can identify and confirm your restitution within the Justice System as well as process your payment and issue you a receipt.</p>
-                            <p class="mb-3">We use and disclose your personal information for the purposes described above. We may only use or disclose your personal information for another purpose if we are authorized by law to do so, or if we obtain your express consent. To read more about how government respects your privacy when interacting with us review our full Privacy Statement(opens in a new tab). For questions about how your personal information is handled in relation this service, you may contact Service Nova Scotia and Internal Services at askus@novascotia.ca.</p>
-                        </div>
-                        
+                        <h2>Self-Declaration</h2>
+                        <p>This collection and use of information is authorized by sections 8, 15 and 50 of the <a target="_blank" href="https://novascotia.ca/coronavirus/docs/health-protection-act-order-by-the-medical-officer-of-health.pdf">Health Protection Act (PDF)</a>.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <a id="introCancel" class="underlineLink mr-4" href="https://novascotia.ca/coronavirus/">Cancel</a>
-                        <a id="introContinue" class="btn btn-success btn-lg ml-5" href="register.html">Register Now</a>
+                <div class="row mt-3">
+                    <div class="col-sm-10 form-group">
+                        <fieldset>
+                            <legend class="legendQuestion">You must make the following declarations:</legend>
+                            <div class="chkBoxes">
+                                <input class="chkSelfCheckinDelcaration mt-2" data-val="true" data-val-required="I am at least 18 years of age." id="IsDeclartion1Checked" name="IsDeclartion1Checked" type="checkbox" value="true" />
+                                <label class="chkBoxLabel ml-2" for="IsDeclartion1Checked">I am at least 18 years of age.</label>
+                            </div>
+                            <div class="chkBoxes">
+                                <input class="chkSelfCheckinDelcaration mt-2" data-val="true" data-val-required="" id="IsDeclartion3Checked" name="IsDeclartion3Checked" type="checkbox" value="true" />
+                                <label class="chkBoxLabel ml-2" for="IsDeclartion3Checked">I understand that I must self-isolate as directed by Public Health</label>
+                            </div>
+                            <div class="chkBoxes">
+                                <input class="chkSelfCheckinDelcaration mt-2" data-val="true" data-val-required="" id="IsDeclartion2Checked" name="IsDeclartion2Checked" type="checkbox" value="true" />
+                                <label class="chkBoxLabel ml-2" for="IsDeclartion2Checked">I consent to a Nova Scotia Health official or delegate contacting me at the phone number provided during registration to verify that I am self-isolating and / or request additional information about my health or self-isolation.</label>
+                            </div>
+                            <div class="chkBoxes">
+                                <input class="chkSelfCheckinDelcaration mt-2" data-val="true" data-val-required="" id="IsDeclartion3Checked" name="IsDeclartion3Checked" type="checkbox" value="true" />
+                                <label class="chkBoxLabel ml-2" for="IsDeclartion3Checked">I declare that the information given on this form is complete, correct and fully discloses everything concerning my eligibility to travel to NS. I understand that it is an offence to knowingly provide false or misleading information, either orally or in writing, to a Nova Scotia Health official under the NS Health Protection Act for which I may be fined $1,000.00 per occurrence.</label>
+                            </div>
+                        </fieldset>
+                        <div class="help-block text-danger">
+                            <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+                            <span class="field-validation-valid" data-valmsg-for="CheckboxError" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-0">
+                    <div class="col-sm-10">
+                        <a id="BackLink" href="#" class="underlineLink mr-4" onclick="history.back();"><i class="fa fa-angle-left"></i>Back</a>
+                        <!-- <input type="submit" id="RegisterSubmit" class="btn-default btn-lg ml-5" value="Register" /> -->
+                        <a id="Submit" class="btn btn-success btn-lg ml-5" href="register-confirmation.html">Register</a>
                     </div>
                 </div>
             </section>

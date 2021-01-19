@@ -124,6 +124,39 @@
                                 </div>
                             </div>
 
+
+                            <div class="row m-b-md form-group">
+                                <div class="col-sm-10">
+                                    <fieldset role="group" aria-describedby="DOBHint">
+                                        <legend class="legendQuestion" style="border-bottom-width:0; margin-bottom: 0;"><label for="DateOfBirth">Date of birth (eg. 01 23 1990)</label></legend>
+                                        <div class="row">
+                                            <div class="col-xs-1">
+                                                <label for="Day" class="d-none">DD</label>
+                                                <input autocomplete="off" class="dayMonthField" id="Day" inputmode="numeric" maxlength="2" name="Day" pattern="[0-9]*" type="text" value="" placeholder="DD" />
+                                            </div>
+                                            <div class="col-xs-1" style="margin-left: 33px;">
+                                                <label for="Month" class="d-none">MM</label>
+                                                <input autocomplete="off" class="dayMonthField" id="Month" inputmode="numeric" maxlength="2" name="Month" pattern="[0-9]*" type="text" value="" placeholder="MM" />
+                                            </div>
+                                            <div class="col-xs-2" style="margin-left:33px;">
+                                                <label for="Year" class="d-none">YYYY</label>
+                                                <input autocomplete="off" class="yearField" id="Year" inputmode="numeric" maxlength="4" name="Year" pattern="[0-9]*" type="text" value="" placeholder="YYYY" />
+                                            </div>
+                                        </div>
+                                        <!-- <div class="row" id="DOBHint">
+                                            <div class="col-sm-10">
+                                                Example: 01 10 1990
+                                            </div>
+                                        </div> -->
+                                    </fieldset>
+                                    <input id="DateOfBirth" name="DateOfBirth" type="hidden" value="" />
+                                    <div class="help-block text-danger">
+                                        <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+                                        <span class="field-validation-valid" data-valmsg-for="DateOfBirth" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="row">
                                 <div class="col-sm-10">
                                     <label for="Email">Email Address</label>

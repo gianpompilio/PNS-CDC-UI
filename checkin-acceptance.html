@@ -18,33 +18,17 @@
     <meta property="og:title" content="Covid Daily Check-in" />
     <meta property="og:site_name" content="Covid Daily Check-in" />
 
-    <title>Covid Daily Check-in - Government of Nova Scotia</title>
+    <title>Check-In Confirmation - Covid Daily Check-in - Government of Nova Scotia</title>
 
     <link rel="icon" type="image/x-icon" href="https://novascotia.ca/clf/ignition/favicon.ico" />
     <link rel="apple-touch-icon-precomposed" href="https://novascotia.ca/clf/ignition/shortcut.png" />
 
-    <link rel="stylesheet" media="all" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" media="all" href="assets/lib/bootstrap/dist/css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" media="all" href="assets/lib/bootstrap-datepicker/css/bootstrap-datepicker.min.css" />
-    <link rel="stylesheet" media="all" href="assets/lib/jqueryui/jquery-ui.min.css" />
-    <link rel="stylesheet" media="all" href="assets/lib/font-awesome/css/all.min.css" />
-    <link rel="stylesheet" media="all" href="assets/lib/bootstrap-datepicker/css/bootstrap-datepicker.min.css" />
-    <link rel="stylesheet" media="all" href="assets/css/saltire.min.css" />
-    <link rel="stylesheet" media="all" href="assets/css/site.min.css" />
-    <link rel="stylesheet" media="all" href="assets/css/supplimentary-page-styles.css"><!-- Include in all head tags -->
-	<link rel="stylesheet" media="all" href="assets/css/global-form-styles.css"><!-- Include only if forms are used-->
-	<link rel="stylesheet" media="all" href="assets/css/radio-button.css"><!-- Include only if radios are used-->
-	<link rel="stylesheet" media="all" href="assets/css/toggle.css"><!-- Include only if toggles are present-->
-	<link rel="stylesheet" media="all" href="assets/css/checkboxes.css"><!-- Include only if checkboxes are used-->
-	<link rel="stylesheet" media="all" href="assets/css/slider.css"><!-- Include only if sliders are used-->
-	<link rel="stylesheet" media="all" href="assets/css/input-field-group.css"><!-- Include only if inputs are used-->
-	<link rel="stylesheet" media="all" href="assets/css/select.css"><!-- Include only if selects are used-->
-	<link rel="stylesheet" media="all" href="assets/css/buttons.css"><!-- Include only if buttons are used-->
-	<link rel="stylesheet" media="all" href="assets/css/phase-banner.css"><!-- Include only if phase banner is used-->
-	<link rel="stylesheet" media="all" href="assets/css/accordion.css"><!-- Include this only if needed -->
-	<link rel="stylesheet" media="all" href="assets/css/panel.css"><!-- Include this only if needed -->
-	<link rel="stylesheet" media="all" href="assets/css/date-picker.css"><!-- Include this only if needed -->
-
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="assets/lib/jqueryui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/lib/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/lib/bootstrap-datepicker/css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="assets/css/saltire.min.css" />
+    <link rel="stylesheet" href="assets/css/site.min.css" />
     
 </head>
 
@@ -86,35 +70,45 @@
             <!-- Heading -->
             <div class="row m-b-md m-t-md">
                 <div class="col-sm-12">
-                        <h1>Covid Daily Check-in</h1>
+                    <h1>Covid Daily Check-in</h1>
                 </div>
             </div>
             <!-- END Heading -->
                 
             <!-- Section -->
-            <section class="featured" id="contactInfo">
-                <form action="" method="post">    
-
-                    <div class="row">
-                        <div class="col-sm-10 col-md-8">
-                            <h2 class="m-b-md">Do you need to speak to a nurse?</h2>
+            <section class="featured " id="index">
+                <div class="row m-t-md">
+                    <div class="col-sm-12">
+                        <h2>Acceptance</h2> 
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-10 form-group">
+                        <fieldset>
+                            <legend class="legendQuestion">You must confirm the following statements:</legend>
+                            <div class="chkBoxes">
+                                <input class="chkSelfCheckinDelcaration mt-2" data-val="true" data-val-required="The I declare that the information given on this form is complete, correct and fully discloses everything concerning my self-isolation period in Nova Scotia. field is required." id="IsDeclartion1Checked" name="IsDeclartion1Checked" type="checkbox" value="true" />
+                                <label class="chkBoxLabel ml-2" for="IsDeclartion1Checked">I declare that the information given on this form is complete, correct and fully discloses everything concerning my self-isolation.</label>
+                            </div>
+                            <div class="chkBoxes">
+                                <input class="chkSelfCheckinDelcaration mt-2" data-val="true" data-val-required="The I understand that it is an offence to knowingly provide false or misleading information, either orally or in writing, to a Nova Scotia Health official under the Nova Scotia Health Protection Act for which I may be fined $1000 per occurrence. field is required." id="IsDeclartion2Checked" name="IsDeclartion2Checked" type="checkbox" value="true" />
+                                <label class="chkBoxLabel ml-2" for="IsDeclartion2Checked">I understand that it is an offence to knowingly provide false or misleading information, either orally or in writing, to a Nova Scotia Health official under the Nova Scotia Health Protection Act for which I may be fined $1,000 per occurrence.</label>
+                            </div>
+                        </fieldset>
+                        <div class="help-block text-danger">
+                            <i class="fa fa-exclamation-circle error-indicator errorAlert" aria-hidden="true"></i>
+                            <span class="field-validation-valid" data-valmsg-for="CheckboxError" data-valmsg-replace="true"></span>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row mt-5">
-                        <div class="col-sm-10">
-                            <a id="YesButton" class="btn-xxl btn-default centered mr-4" href="checkin-acceptance.html?flagged=Yes">Yes</a>
-                            <a id="NoButton" class="btn-xxl btn-default centered ml-5" href="checkin-acceptance.html">No</a>
-                        </div>
+                <div class="row mt-0">
+                    <div class="col-sm-10">
+                        <a id="BackLink" href="#" class="underlineLink mr-4" onclick="history.back();"><i class="fa fa-angle-left"></i>Back</a>
+                        <!-- <input type="submit" id="RegisterSubmit" class="btn-default btn-lg ml-5" value="Register" /> -->
+                        <a id="Submit" class="btn btn-success btn-lg ml-5" href="checkin-confirmation.html">Submit</a>
                     </div>
-
-                    <div class="row mt-5">
-                        <div class="col-sm-10">
-                            <a id="BackLink" href="#" class="underlineLink mr-4" onclick="history.back();"><i class="fa fa-angle-left"></i>Back</a>
-                        </div>
-                    </div>
-                    
-                </form>
+                </div>
             </section>
             <!-- END Section -->
 

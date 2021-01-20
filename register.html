@@ -88,7 +88,7 @@
 
                             <div class="row m-b-md">
                                 <div class="col-sm-10">
-                                    <p>Enter the information confirmed by your Public Health contact.</p>
+                                    <!-- <p>Enter the information confirmed by your Public Health contact.</p> -->
                                 </div>
                             </div>
 
@@ -212,11 +212,15 @@
                                     <input data-val="true" data-val-required="Enter your isolation end date." id="IsolationEndDate" name="IsolationEndDate" size="32" type="text" value="" />&nbsp;
                                     <span class="input-group-addon btn"><i class="fa fa-calendar" aria-hidden="true"></i></span>
                                     <i class="fa fa-exclamation-circle error-indicator" aria-hidden="true"></i>
+                                    <div class="help-block text-muted">
+                                        <span class="field-validation-valid" data-valmsg-for="IsolationEndDate" data-valmsg-replace="true">Enter the isolation end date provided by Public Health</span>
+                                    </div>
                                     <div class="help-block text-danger">
                                         <span class="field-validation-valid" data-valmsg-for="IsolationEndDate" data-valmsg-replace="true"></span>
                                     </div>
                                 </div>
                             </div>
+                            
 
                             <!-- <div class="row m-b-md form-group">
                                 <div class="col-sm-10">
